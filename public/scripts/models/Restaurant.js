@@ -344,7 +344,7 @@ var app = app || {};
     }
     Admin.fetchAboutUs = (callback) => {
         Admin.aboutUs = [];
-        var url = 'http://localhost:3000/scripts/about-us.json';
+        var url = '/scripts/about-us.json';
         $.get(url)
             .then(function(reviewsTestData){
             for(var index in reviewsTestData){
